@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | SamProg</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="calculator">
+        <h1>Calculator</h1>
+        <div class="inputbox">
+            <input type="text" id="input-box" placeholder="0">
+        </div>
+        <div class="buttons">
+            <div class="row">
+                <button  onclick="clearValue()">AC</button>
+                <button onclick="oneElementRemove()">←</button>
+                <button  onclick="show(event)">**</button>
+                <button  onclick="show(event)">/</button>
+            </div>
+            <div class="row">
+                <button  onclick="show(event)">7</button>
+                <button  onclick="show(event)">8</button>
+                <button  onclick="show(event)">9</button>
+                <button  onclick="show(event)" id="astrich">*</button>
+            </div>
+            <div class="row">
+                <button  onclick="show(event)">4</button>
+                <button  onclick="show(event)">5</button>
+                <button  onclick="show(event)">6</button>
+                <button  onclick="show(event)">-</button>
+            </div>
+            <div class="row">
+                <button  onclick="show(event)">1</button>
+                <button  onclick="show(event)">2</button>
+                <button  onclick="show(event)">3</button>
+                <button  onclick="show(event)">+</button>
+            </div>
+            <div class="row">
+                <button  onclick="show(event)">%</button>
+                <button  onclick="show(event)">0</button>
+                <button onclick="show(event)">.</button>
+                <button onclick="result()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
